@@ -1,4 +1,4 @@
-
+import './style.css'
 
 const Bill = () => {
 
@@ -9,3 +9,5 @@ const Bill = () => {
         </div>
     )
 }
+
+export default Bill
