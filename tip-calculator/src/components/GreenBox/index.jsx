@@ -5,10 +5,10 @@ const GreenBox = ({text}) => {
         <div className="green-box">
             <p>Tip Amount</p>
             <p>/ person</p>
-            <input />
+            <input id="tip-amount"/>
             <p>Total</p>
             <p>/ person</p>
-            <input />
+            <input id="total"/>
             <button className="green-button" text="Reset">{text}</button>
         </div>
 
