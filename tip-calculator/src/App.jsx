@@ -8,7 +8,12 @@ import { useState } from "react"
 
 function App() {
 
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState("")
+
+    const [billAmount, setBillAmount] = useState("")
+    const [tipPercentage, setTipPercentage] = useState("")
+
+
 
   return (
     <>
