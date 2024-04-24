@@ -1,12 +1,15 @@
 import "./style.css"
 
-const GreenBox = () => {
+const GreenBox = ({text}) => {
     return (
         <div className="green-box">
-            <label />
+            <p>Tip Amount</p>
+            <p>/ person</p>
             <input />
-            
-            <button text="Reset">{text}</button>
+            <p>Total</p>
+            <p>/ person</p>
+            <input />
+            <button className="green-button" text="Reset">{text}</button>
         </div>
 
     )

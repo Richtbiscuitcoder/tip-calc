@@ -23,12 +23,16 @@ const ButtonBox = () => {
   }
     return (
         <div className="tip-percent">
+            <p>Bill</p>
+            <input type="number" placeholder="$"/>
             <Button text="5%" handleClick={button1click}/>
             <Button text="10%" handleClick={button2click}/>
             <Button text="15%" handleClick={button3click}/> 
             <Button text="25%" handleClick={button4click}/>
             <Button text="50%" handleClick={button5click}/>
             <CustomButton text="Custom" handleClick={button6click}/>
+            <p>Number of people</p>
+            <input type="number" />
         </div>
     )
 }

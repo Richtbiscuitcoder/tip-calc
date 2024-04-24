@@ -1,9 +1,23 @@
 .tip-percent {
     background: white;
-    width: 400px;
-    height: 150px;
-    padding: 10px;
+    width: 250px;
+    height: 400px;
+    padding: 50px;
     display: block;
     justify-content: center;
     align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.tip-percent p {
+    display: flex;
+    justify-content: center;
+}
+
+.tip-percent input {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
 }
