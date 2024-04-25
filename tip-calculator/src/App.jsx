@@ -8,12 +8,20 @@ import { useState } from "react"
 
 function App() {
 
-  const [inputValue, setInputValue] = useState("")
-
-    const [billAmount, setBillAmount] = useState("")
-    const [tipPercentage, setTipPercentage] = useState("")
 
 
+    const [billAmount, setBillAmount] = useState(1)
+
+    const [numOfPeople, setNumberOfPeople] = useState(1)
+
+    const [tipPercentage, setTipPercentage] = useState(0)
+
+    const [tipAmount, setTipAmount] = useState(0)
+    const [perPerson, setPerPerson] = useState(0)
+
+    const [resetButton, setResetButton] = useState("")
+    
+  
 
   return (
     <>
@@ -21,8 +29,7 @@ function App() {
         <div className="container">
           <GreenBox text="Reset" />
           <ButtonBox />
-          <Input setValue={setInputValue} />
-          <p>{inputValue}</p>
+          <Input />
         </div>
       </div>
     </>

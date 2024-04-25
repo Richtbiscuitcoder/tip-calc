@@ -1,4 +1,4 @@
-const Input = ({setValue}) => {
+const Input = ({setValue, text}) => {
 
 
     const handleChange = (e) => {
@@ -7,7 +7,10 @@ const Input = ({setValue}) => {
     }
 
     return (
-        <input type="number" onChange={handleChange} />
+        <>
+            <label>{text}</label>
+            <input type="number" onChange={handleChange} />
+        </>
     )
 
 }
