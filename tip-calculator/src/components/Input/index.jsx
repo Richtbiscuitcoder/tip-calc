@@ -1,15 +1,17 @@
-const Input = ({setValue, text}) => {
+const Input = ({text}) => {
 
 
     const handleChange = (e) => {
         
-        console.log(e.target.value)
+        console.log(input.target.value)
     }
 
     return (
         <>
-            <label>{text}</label>
-            <input type="number" onChange={handleChange} />
+            <label>
+                <input type="number" onChange={handleChange} text="Bill" />
+            </label>
+            
         </>
     )
 

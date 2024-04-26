@@ -10,17 +10,15 @@ function App() {
 
 
 
-    const [billAmount, setBillAmount] = useState(1)
-
-    const [numOfPeople, setNumberOfPeople] = useState(1)
-
-    const [tipPercentage, setTipPercentage] = useState(0)
-
+    const [billInput, setBillInput] = useState(1)
+    const [peopleInput, setNumberOfPeople] = useState(1)
+    const [tipPerPerson, setTipPercentage] = useState(0)
+    const [totalPerPerson, setTotalPerPerson] = useState(0)
     const [tipAmount, setTipAmount] = useState(0)
-    const [perPerson, setPerPerson] = useState(0)
-
     const [resetButton, setResetButton] = useState("")
     
+    
+
   
 
   return (
